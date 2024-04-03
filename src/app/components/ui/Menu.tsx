@@ -57,6 +57,15 @@ const Menu = () => {
           >
             <CartIcon />
           </Link>
+          <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-orange-400 px-2 rounded-xl">
+            <Image
+              src="/phone.png"
+              alt="Ícone de uma Telefone"
+              width={20}
+              height={20}
+            />
+            <span>00 00000-0000</span>
+          </div>
         </div>
       )}
     </div>
