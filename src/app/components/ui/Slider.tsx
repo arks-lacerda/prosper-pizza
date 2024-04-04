@@ -31,9 +31,9 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-10rem)] lg:flex-row m-4">
+    <div className="flex flex-col h-[600px] lg:h-[800px]  lg:flex-row my-10 mx-4">
       {/* Text container */}
-      <div className="p-4 h-1/2 flex items-center justify-center flex-col gap-8  text-red-500 font-bold lg:w-1/2 rounded-s-xl bg-fuchsia-100">
+      <div className="p-4 h-1/2 flex items-center justify-center flex-col gap-4  text-red-500 font-bold lg:w-1/2  bg-fuchsia-100">
         <h1 className="text-4xl text-center md:p-10 font-semibold leading-[1.3] md:text-5xl  xl:text-6xl">
           {data[currentSlide].title}
         </h1>
@@ -48,7 +48,7 @@ const Slider = () => {
           src={data[currentSlide].image}
           alt="Um homem com dois pedaço de pizza tampando os olhos"
           fill
-          className="object-cover rounded-e-xl"
+          className="object-cover"
         />
       </div>
     </div>
